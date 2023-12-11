@@ -1,0 +1,38 @@
+footer {
+  background: #9eb3c9;
+  padding: var(--container);
+}
+
+@media (min-width: 1024px) {
+  footer {
+    padding: 1rem var(--container);
+  }
+}
+
+.footer__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__logo {
+  max-width: 100px;
+  object-fit: cover;
+  margin-bottom: 0.7rem;
+}
+
+.footer__address {
+  text-align: center;
+}
+
+.footer__icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+.footer__icon {
+  max-width: 2rem;
+}

@@ -1,0 +1,197 @@
+@import "./variables.css";
+
+.site-header {
+  z-index: 2;
+  position: fixed;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: var(--header-height);
+  padding: 0 var(--container);
+  background: var(--color-bg);
+  color: var(--color-on-bg);
+}
+
+.site-header.is-active {
+  background: var(--color-primary);
+}
+
+@media (min-width: 1024px) { /* Kilde: chat GPT */
+  .site-header.is-active {
+    background: var(--color-bg);
+    z-index: 0;
+  }
+}
+
+/* Hamburger*/
+
+.hamburger-btn .line {
+  width: 25px;
+  height: 2px;
+  background-color: var(--color-on-bg);
+  display: block;
+  margin: 6px 0;
+  -webkit-transition: all 0.3s ease-in-out; /* Kilde: chat GPT */
+  -o-transition: all 0.3s ease-in-out; /* Kilde: chat GPT */
+  transition: all 0.3s ease-in-out; /* Kilde: chat GPT */
+}
+
+.hamburger-btn {
+  cursor: pointer;
+}
+
+/* MQ To avoid the animation on desktop */ /* Kilde: chat GPT */
+@media (max-width: 767px) {
+  .hamburger-btn.is-active .line:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger-btn.is-active .line:nth-child(1) {
+    -webkit-transform: translateY(8px) rotate(45deg);
+    -ms-transform: translateY(8px) rotate(45deg);
+    -o-transform: translateY(8px) rotate(45deg);
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger-btn.is-active .line:nth-child(3) { 
+    -webkit-transform: translateY(-8px) rotate(-45deg);
+    -ms-transform: translateY(-8px) rotate(-45deg);
+    -o-transform: translateY(-8px) rotate(-45deg);
+    transform: translateY(-8px) rotate(-45deg);
+  }
+}
+
+/* Logo */
+.site-header__logo {
+  width: 75px;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Icons */
+.site-header__icons-container {
+  display: flex;
+  align-items: center;
+}
+
+.site-header__icon {
+  width: 22px;
+}
+
+.site-header__icon:first-child {
+  margin-right: 0.9rem;
+}
+
+/* Overlay */
+
+#menu-overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 0rem var(--container);
+  background: var(--color-primary);
+  z-index: 1;
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  #menu-overlay {
+    right: 60vw;
+  }
+}
+
+/* Overlay open */
+#menu-overlay.open { /* Kilde: chat GPT */
+  display: block;
+}
+
+/* Overlay close button */
+.menu-overlay__close-container { /* Kilde: chat GPT */
+  height: var(--header-height);
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+#menu-overlay-close { /* Kilde: chat GPT */
+  cursor: pointer;
+}
+
+#menu-overlay #menu-overlay-close .line { /* Kilde: chat GPT */
+  width: 25px;
+  height: 2px;
+  background-color: var(--color-on-bg);
+  display: block;
+  margin: 6px 0;
+}
+
+#menu-overlay #menu-overlay-close .line:nth-child(1) { /* Kilde: chat GPT */
+  -webkit-transform: translateY(4px) rotate(45deg);
+  -ms-transform: translateY(4px) rotate(45deg);
+  -o-transform: translateY(4px) rotate(45deg);
+  transform: translateY(4px) rotate(45deg);
+}
+
+#menu-overlay #menu-overlay-close .line:nth-child(2) { /* Kilde: chat GPT */
+  -webkit-transform: translateY(-4px) rotate(-45deg);
+  -ms-transform: translateY(-4px) rotate(-45deg);
+  -o-transform: translateY(-4px) rotate(-45deg);
+  transform: translateY(-4px) rotate(-45deg);
+}
+
+/* Overlay navigation */
+
+#menu-overlay nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#menu-overlay nav a {
+  color: var(--color-on-bg);
+  text-decoration: none;
+  font-family: noto serif;
+}
+
+/* First level nav items */
+#menu-overlay nav .menu__link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.2rem;
+}
+
+#menu-overlay nav .menu__link-icon {
+  width: 40px;
+}
+
+/* Second level nav items */
+#menu-overlay .menu__item .menu__sub-list {
+  margin-left: 0.3rem;
+  max-height: 0;
+  overflow: hidden;
+}
+
+#menu-overlay .menu__item .menu__sub-list.active { /* Kilde: chat GPT */
+  max-height: 1000px;
+}
+
+#menu-overlay .menu__item .menu__sub-list.active li:not(:last-child) { /* Kilde: chat GPT */
+  margin-bottom: 0.3rem;
+}
+
+.links {
+  list-style: none;
+}
+
+.links a {
+  text-decoration: none;
+  list-style: none;
+  font-size: 1.2rem;
+  font-family: noto serif;
+  justify-content: space-between;
+}
