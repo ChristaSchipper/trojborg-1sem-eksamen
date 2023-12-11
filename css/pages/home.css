@@ -1,0 +1,150 @@
+.hero {
+  height: calc(100vh - var(--header-height));
+  border-radius: 24px;
+}
+
+.hero .hero__media {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.hero .hero__overlay { /* Kilde: chat GPT */
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: gray;
+  opacity: 0.2;
+}
+
+.hero .hero__image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  object-position: center center;
+}
+
+.hero .hero__text-container {
+  position: absolute;
+  left: var(--container);
+  bottom: 5vh;
+  text-align: left;
+  color: white;
+}
+
+@media (min-width: 1024px) {
+  .hero .hero__text-container {
+    max-width: 60%;
+  }
+}
+
+.hero .hero__title {
+  margin-bottom: 1.2rem;
+}
+
+.hero .hero__link {
+  color: white;
+}
+
+/* Beer cards */
+
+.beer-cards-container {
+  overflow: visible;
+}
+
+.beer-cards-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  overflow: hidden;
+}
+
+.beer-cards {
+  display: flex;
+  transition: transform 0.3s ease-in-out;
+  min-width: 220px;
+  margin-right: 1.5rem;
+}
+
+.beer-cards-header__title {
+  text-align: center;
+}
+
+.beer-cards-header__icons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.beer-cards-header__icons svg {
+  display: block;
+  width: 2rem;
+  height: 2rem;
+}
+
+
+
+@media (hover: hover) {
+  .beer-cards-header__icons svg:hover {
+    opacity: 0.7;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 767px) { /* Kilde: chat GPT */
+  .beer-card {
+    min-width: calc(100% - 1.5rem); /* Adjust card width for better responsiveness on mobile */
+  }
+}
+
+.beer-card {
+  flex: 1;
+  min-width: 220px;
+  margin-right: 1.5rem;
+}
+
+.beer-card .beer-card__image {
+  max-width: 100px;
+  margin: 0 auto;
+  margin-bottom: 0.8rem;
+}
+
+.beer-card .beer-card__content {
+  text-align: center;
+}
+
+@media (min-width: 1024px) { /* Kilde: chat GPT */
+  .beer-cards-header {
+    margin-bottom: 3rem;
+  }
+  .beer-cards-header__icons {
+    display: flex;
+  }
+
+  .beer-card {
+    display: flex;
+    align-items: center;
+    margin-right: 100px;
+    min-width: 300px;
+  }
+
+  .beer-card .beer-card__image {
+    width: 300px;
+    margin-bottom: 0rem;
+    margin-right: 1.3rem;
+  }
+
+  .beer-card .beer-card__content {
+    text-align: left;
+  }
+}

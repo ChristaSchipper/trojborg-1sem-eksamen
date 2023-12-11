@@ -1,0 +1,154 @@
+@import "../header.css";
+
+
+.product-card__image-container {
+  max-width: 150px;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+}
+
+.product-card__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-card__brand {
+  display: inline-block;
+  font-size: 0.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.product-card__price {
+  margin-top: 1.5rem;
+}
+
+.product-card__tax {
+  font-size: 10px;
+  margin-top: 0.2rem;
+}
+
+.product-card__controls {
+  display: flex;
+  margin: 1.5rem 0rem;
+}
+
+.product-card__quantity {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  border: 1px solid var(--color-on-bg);
+  border-radius: 1px;
+  margin-right: 1rem;
+}
+
+.product-card__quantity-btn {
+  padding: 0.7rem 1rem;
+}
+
+.product-card__quantity-btn svg {
+  width: 1.5rem;
+  height: auto;
+}
+
+.product-card__add-to-cart {
+  background: var(--color-on-bg);
+  color: var(--color-bg);
+  padding: 0.7rem 1rem;
+}
+
+@media (min-width: 1024px) {
+  .product-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 2rem;
+    align-items: center;
+  }
+  .product-card__image-container {
+    max-width: 300px;
+  }
+
+  .product-card__info {
+    justify-content: left;
+    align-items: flex-start;
+  }
+}
+
+.recommendation-section__images {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.recommendation-section__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.recommendation-section__content a {
+  text-decoration: underline;
+}
+
+.recommendation-section__images {
+  overflow: visible;
+}
+
+.recommendation-section__images img {
+  max-width: 150px;
+  margin-right: 0.8rem;
+}
+
+.info-box__disclaimer {
+  display: inline-block;
+  margin-top: 1rem;
+}
+
+.icon {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 1rem;
+}
+
+.icon img {
+  max-width: 100px;
+}
+
+
+
+
+.side-by-side .side-by-side__image {
+  border-radius: 24px;
+  margin-bottom: 1rem;
+}
+
+.side-by-side .side-by-side__content a {
+  text-decoration: underline;
+  margin-top: 0.8rem;
+  display: inline-block;
+}
+
+.side-by-side__image {
+  aspect-ratio: 1/4;
+  object-fit: cover;
+  max-height: 300px;
+}
+
+@media (min-width: 1024px) {
+  .side-by-side {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 5rem;
+    align-items: center;
+  }
+
+  .side-by-side.reverse .side-by-side__item:first-child {
+    order: 1;
+  }
+
+  .side-by-side__image {
+    margin-bottom: 0rem;
+    max-height: 500px;
+    object-fit: cover;
+  }
+}
