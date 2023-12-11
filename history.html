@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/pages/history.css" />
+    <link rel="stylesheet" href="./css/components/sbs.css" />
+    <link rel="stylesheet" href="css/footer.css">
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <div class="page-container">
+      <header>
+        <div class="site-header">
+          <div class="hamburger-btn" aria-label="Toggle Navigation" aria-expanded="false" aria-controls="menu" role="button">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+          </div>
+
+
+          <a href="home.html" aria-label="Hjem" class="site-header__logo-link">
+            <img src="img/logo1.svg" alt="Trøjborg Bryg logo" class="site-header__logo" />
+          </a>
+
+          <div class="site-header__icons-container">
+            <!-- icons in header  -->
+            <div class="site-header__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+            </div>
+            <div class="site-header__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-shopping-cart">
+                <circle cx="9" cy="21" r="1"></circle>
+                <circle cx="20" cy="21" r="1"></circle>
+                <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <div id="menu-overlay" aria-hidden="true">
+          <div class="menu-overlay__close-container">
+            <div id="menu-overlay-close" aria-label="close navigation" aria-expanded="true" aria-controls="menu" role="button">
+              <span class="line"></span>
+              <span class="line"></span>
+            </div>
+          </div>
+ <!-- menu in header  -->
+          <nav id="menu">
+            <ul>
+              <li class="menu__item">
+                <div class="menu__link">
+                  <a href="#">Sortiment</a>
+
+                  <!-- Chevron icon for overlay-->
+                  <span class="menu__link-icon menu__link-toggle-subnav">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                  </span>
+                </div>
+                <!-- menu sublist-->
+                <ul class="menu__sub-list">
+                  <li class="menu__sub-item">
+                    <a href="home.html" class="menu__sub-link">Lager</a>
+                  </li>
+                  <li>
+                    <a href="home.html" class="menu__sub-link">Ale</a>
+                  </li>
+                  <li><a href="product.html" class="menu__sub-link">Alkoholfri</a></li>
+                </ul>
+              </li>
+            </ul>
+
+            <ul>
+              <li class="menu__item">
+                <div class="menu__link">
+                  <a href="home.html">Medlemskab</a>
+
+                  <!-- Chevron icon for overlay-->
+                  <span class="menu__link-icon menu__link-toggle-subnav">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                  </span>
+                </div>
+                <!-- menu sublist-->
+                <ul class="menu__sub-list">
+                  <li class="menu__sub-item">
+                    <a href="home.html" class="menu__sub-link">Profil</a>
+                  </li>
+                  <li>
+                    <a href="home.html" class="menu__sub-link">Abbonnement</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+
+            <ul>
+              <li class="menu__item">
+                <div class="menu__link">
+                  <a href="#">Bryggeriet</a>
+                  <!-- Chevron icon for overlay-->
+                  <span class="menu__link-icon menu__link-toggle-subnav">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                  </span>
+                </div>
+                <!-- menu sublist-->
+                <ul class="menu__sub-list">
+                  <li class="menu__sub-item">
+                    <a href="history.html" class="menu__sub-link">Historien</a>
+                  </li>
+                  <li>
+                    <a href="home.html" class="menu__sub-link">Events</a>
+                  </li>
+                  <li>
+                    <a href="home" class="menu__sub-link">Rundvisninger</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+              <li class="links">
+                <a href="home">Gavekort</a>
+              </li>
+              <li class="links">
+                <a href="home">Kontakt os</a>
+              </li>
+         
+          </nav>
+        </div>
+      </header>
+      <main>
+        <section class="side-by-side">
+          <h1>Historien om Trøjborg bryg</h1>
+          <br>
+          <div class="side-by-side__item"><img src="img/tordenskjoldsgade.jpg" alt="" class="side-by-side__image" /></div>
+          <div class="side-by-side__item">
+            <div class="side-by-side__content">
+              <h3 class="h3">Trøjborgs hjerte</h3>
+              <p>Dybt forankret i det pulserende hjerte af Trøjborg, Århus, finder vi Trøjborg Bryggeri - mere end blot et sted, hvor øl brygges, men en fortælling, der væver sig ind i samfundets sjæl og skaber dybe rødder i lokalsamfundet.</p>
+            </div>
+          </div>
+        </section>
+        <section class="side-by-side reverse">
+          <div class="side-by-side__item"><img src="img/ølmester.png" alt="" class="side-by-side__image" /></div>
+          <div class="side-by-side__item">
+            <div class="side-by-side__content">
+              <h3 class="h3">Brygmester Frederiks vision</h3>
+              <p>
+                Den karismatiske brygmester, Frederik Nielsen, bar en vision med sig, en vision om at skabe øl, der ikke kun ville tilfredsstille smagsløgene, men også ville blive et samlingspunkt for de lokale. Det er ikke kun smagen af øllen, der
+                gør Trøjborg Bryggeri unikt. Det er den fortælling bag hver etiket, fortællingen om de lokale kunstnere, der har bidraget til designet, og historien om de frivillige fra lokalsamfundet, der har hjulpet med at dyrke ingredienserne.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section class="side-by-side">
+          <div class="side-by-side__item"><img src="img/faelleskab.png" alt="" class="side-by-side__image" /></div>
+          <div class="side-by-side__item">
+            <div class="side-by-side__content">
+              <h3 class="h3">Venner og familie mødes</h3>
+              <p>Trøjborg Bryggeri har skabt et rum, hvor naboer bliver venner, og venner bliver familie. Gennem årene har Trøjborg Bryggeri støttet lokale initiativer og velgørenhedsprojekter, der nærer fællesskabet. </p>
+            </div>
+          </div>
+        </section>
+        <section class="brewery-section">
+          <h3 class="brewery-section__title h3">Ikke bare en øl!</h3>
+          <p class="brewery-section__description">
+            Når du tager en tår af Trøjborg Bryggeris øl, tager du ikke bare en slurk af en drik; du tager en dyb indånding af Trøjborgs ånd. Trøjborg Bryggeri er ikke kun et bryggeri; det er et hjem, det er en historie, det er en kærlighed til
+            Trøjborg.
+          </p>
+        </section>
+      </main>
+
+      <footer id="kontakt" class="footer fullbleed">
+        <div class="footer__content">
+          <img src="./img/logo1.svg" alt="" class="footer__logo" />
+          <p class="footer__address">
+            Trøjborg Bryg<br />
+            Tordenskjoldsgade<br />
+            Aarhus 8000
+          </p>
+        </div>
+        <div class="footer__icons">
+          <div>
+            <img src="./img/o.png" alt="sundhed" class="footer__icon" />
+            <img src="img/kontrolrapport.svg" alt="kontrolrapport" class="footer__icon" />
+            <img src="./img/trojborg.png" alt="trojborg community" class="footer__icon" />
+          </div>
+          <div class="footer__social-icons">
+            <img src="./img/linkedin-icon.png" alt="linkedin" class="footer__icon footer__social-icon" />
+            <img src="./img/facebook-icon.png" alt="facebook" class="footer__icon footer__social-icon" />
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

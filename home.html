@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trøjborg Bryg</title>
+
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/pages/home.css" />
+    <link rel="stylesheet" href="css/footer.css">
+    
+     <!-- Noto serif-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fascinate+Inline&family=Montserrat&family=Noto+Serif&family=Outfit&family=Poppins:wght@100&display=swap" rel="stylesheet">
+      <!-- Asap-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Asap&family=Fascinate+Inline&family=Montserrat&family=Noto+Serif&family=Outfit&family=Poppins:wght@100&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,100;9..40,400;9..40,500;9..40,600&family=IBM+Plex+Sans:ital,wght@0,500;1,200&family=Open+Sans:wght@500&display=swap" rel="stylesheet" />
+    <script defer src="script.js"></script>
+  </head>
+
+  <body>
+    <div class="page-container">
+      <header>
+        <div class="site-header">
+          <div class="hamburger-btn" aria-label="Toggle Navigation" aria-expanded="false" aria-controls="menu" role="button">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+          </div>
+
+
+          <a href="home.html" aria-label="Hjem" class="site-header__logo-link">
+            <img src="img/logo1.svg" alt="Trøjborg Bryg logo" class="site-header__logo" />
+          </a>
+
+          <div class="site-header__icons-container">
+            <!-- icons in header  -->
+            <div class="site-header__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+            </div>
+            <div class="site-header__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-shopping-cart">
+                <circle cx="9" cy="21" r="1"></circle>
+                <circle cx="20" cy="21" r="1"></circle>
+                <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <div id="menu-overlay" aria-hidden="true">
+          <div class="menu-overlay__close-container">
+            <div id="menu-overlay-close" aria-label="close navigation" aria-expanded="true" aria-controls="menu" role="button">
+              <span class="line"></span>
+              <span class="line"></span>
+            </div>
+          </div>
+ <!-- menu in header  -->
+          <nav id="menu">
+            <ul>
+              <li class="menu__item">
+                <div class="menu__link">
+                  <a href="#">Sortiment</a>
+
+                  <!-- Chevron icon for overlay-->
+                  <span class="menu__link-icon menu__link-toggle-subnav">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                  </span>
+                </div>
+                <!-- menu sublist-->
+                <ul class="menu__sub-list">
+                  <li class="menu__sub-item">
+                    <a href="home.html" class="menu__sub-link">Lager</a>
+                  </li>
+                  <li>
+                    <a href="home.html" class="menu__sub-link">Ale</a>
+                  </li>
+                  <li><a href="product.html" class="menu__sub-link">Alkoholfri</a></li>
+                </ul>
+              </li>
+            </ul>
+
+            <ul>
+              <li class="menu__item">
+                <div class="menu__link">
+                  <a href="home.html">Medlemskab</a>
+
+                  <!-- Chevron icon for overlay-->
+                  <span class="menu__link-icon menu__link-toggle-subnav">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                  </span>
+                </div>
+                <!-- menu sublist-->
+                <ul class="menu__sub-list">
+                  <li class="menu__sub-item">
+                    <a href="home.html" class="menu__sub-link">Profil</a>
+                  </li>
+                  <li>
+                    <a href="home.html" class="menu__sub-link">Abbonnement</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+
+            <ul>
+              <li class="menu__item">
+                <div class="menu__link">
+                  <a href="#">Bryggeriet</a>
+                  <!-- Chevron icon for overlay-->
+                  <span class="menu__link-icon menu__link-toggle-subnav">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                  </span>
+                </div>
+                <!-- menu sublist-->
+                <ul class="menu__sub-list">
+                  <li class="menu__sub-item">
+                    <a href="history.html" class="menu__sub-link">Historien</a>
+                  </li>
+                  <li>
+                    <a href="home.html" class="menu__sub-link">Events</a>
+                  </li>
+                  <li>
+                    <a href="home" class="menu__sub-link">Rundvisninger</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+           
+            
+              <li class="links">
+                <a href="home">Gavekort</a>
+              </li>
+          
+
+            
+              <li class="links">
+                <a href="home">Kontakt os</a>
+              </li>
+         
+          
+          </nav>
+        </div>
+        
+      </header>
+
+      <main>
+                  <!-- fullbleed-->
+        <section class="hero fullbleed">
+          <div class="hero__media">
+           
+            <img src="img/blåtoøl.png" alt="beer" class="hero__image" />
+          </div>
+          <div class="hero__text-container">
+            <h1 class="hero__title">Nyd livets glæder uden alkoholens bivirkninger - vores nye alkoholfrie øl er svaret!</h1>
+            <a class="hero__link" href="product.html">Se mere her</a>
+          </div>
+        </section>
+
+
+ <!-- beer cards -->
+        <section class="beer-cards-container">
+          <div class="beer-cards-header">
+            <h3 class="h3" class="beer-cards-header__title h2">Se alle vores alkoholfrie varianter</h3>
+           <div class="beer-cards-header__icons">
+            <svg class="feather feather-chevron-left" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6z"/>
+            </svg>
+            <svg class="feather feather-chevron-right" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6-6-6z"/>
+            </svg>
+          </div>
+          </div>
+
+         
+          <div class="beer-cards">
+            <div class="beer-card">
+              <div class="beer-card__image">
+                <img src="./img/beer2-small.png" alt="Wheat ale" />
+              </div>
+
+              <div class="beer-card__content">
+                <h3 class="h4">Wheat ale</h3>
+                <p>En fyldig Wheat Ale med delikate kornnoter, der skaber en blød og cremet tekstur i hvert sip</p>
+              </div>
+            </div>
+
+            <div class="beer-card">
+              <div class="beer-card__image">
+                <img src="./img/beer4-small.png" alt="Tropical ale" />
+              </div>
+
+              <div class="beer-card__content">
+                <h3 class="h4">Hazy Ale</h3>
+                <p>En alkoholfri hazy IPA, der bevare den forfriskende og komplekse smagsprofil med eksploderende tropiske frugttoner og bløde harpiksnoter. </p>
+              </div>
+            </div>
+
+            <div class="beer-card">
+              <div class="beer-card__image">
+                <img src="./img/beer5-small.png" alt="Tropical ale" />
+              </div>
+
+              <div class="beer-card__content">
+                <h3 class="h4">Tropical Ale</h3>
+                <p>En alkoholfri Tropical Ale med eksotiske frugttoner, der giver en forfriskende og sommerlig smagsoplevelse. </p>
+              </div>
+            </div>
+
+            <div class="beer-card">
+              <div class="beer-card__image">
+                <img src="./img/beer3-small.png" alt="Citric Ale" />
+              </div>
+
+              <div class="beer-card__content">
+                <h3 class="h4">Citric Ale</h3>
+                <p>En alkoholfri øl med citrusagtig twist, hvor sprøde citronnoter danser på smagsløgene og skaber en lys og opkvikkende drikkeoplevelse.</p>
+              </div>
+            </div>
+
+            <div class="beer-card">
+              <div class="beer-card__image">
+                <img src="./img/beer6-small.png" alt="Stout Ale" />
+              </div>
+  
+              <div class="beer-card__content">
+                <h3 class="h4">Stout Ale</h3>
+                <p>En alkoholfri Stout Ale med dybe ristede maltnoter, der giver en fyldig kaffe- og chokoladesmag uden alkoholens indhold.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="side-by-side">
+          <div class="side-by-side__item"><img src="img/bryggeri.svg" alt="Bryggeriet-indenfor" class="side-by-side__image" /></div>
+          <div class="side-by-side__item">
+            <div class="side-by-side__content">
+              <h3 class="h3">100% økologisk bryggeri</h3>
+              <p>
+                Trøjborg Bryghus er et banebrydende økologisk bryggeri, der er dedikeret til den grønne omstilling. Vi står i spidsen for miljøvenlig praksis, idet både brygning og tapning af vores øl er gennemført CO2-neutralt. Bekræftet af Force
+                Technology.
+              </p>
+              <a href="organic-brew.html">Læs mere her</a>
+            </div>
+          </div>
+        </section>
+
+        <section class="side-by-side reverse">
+          <div class="side-by-side__item"><img src="img/Troejborg_Bryggeri.svg" alt="Gammelt billede af bryggeri" class="side-by-side__image" /></div>
+          <div class="side-by-side__item">
+            <div class="side-by-side__content">
+              <h3 class="h3">Historisk bryggeri og monumental bygning</h3>
+              <p>
+                Trøjborg Bryggeri i Århus er mere end et bryggeri; det er brygmester Frederik Nielsens vision om at binde samfundet sammen gennem ølbrygning. Hvert øl repræsenterer Trøjborgs kulturarv, støttet af de lokale. Bryggeriet fungerer som et
+                samlingspunkt for lokalsamfundet.
+              </p>
+              <a href="history.html">Læs mere her</a>
+            </div>
+          </div>
+        </section>
+      </main>
+
+        <!-- footer -->
+      <footer id="kontakt" class="footer fullbleed">
+        <div class="footer__content">
+          <img src="./img/logo1.svg" alt="" class="footer__logo" />
+          <p class="footer__address">
+            Trøjborg Bryg<br />
+            Tordenskjoldsgade<br />
+            Aarhus 8000
+          </p>
+        </div>
+        <div class="footer__icons">
+          <div>
+            <img src="./img/o.png" alt="sundhed" class="footer__icon" />
+            <img src="img/kontrolrapport.svg" alt="kontrolrapport" class="footer__icon" />
+            <img src="./img/trojborg.png" alt="trojborg community" class="footer__icon" />
+          </div>
+          <div class="footer__social-icons">
+            <img src="./img/linkedin-icon.png" alt="linkedin" class="footer__icon footer__social-icon" />
+            <img src="./img/facebook-icon.png" alt="facebook" class="footer__icon footer__social-icon" />
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
