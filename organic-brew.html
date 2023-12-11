@@ -12,128 +12,129 @@
   </head>
   <body>
     <div class="page-container">
-      <header><div class="site-header">
-        <div class="hamburger-btn" aria-label="Toggle Navigation" aria-expanded="false" aria-controls="menu" role="button">
-          <span class="line"></span>
-          <span class="line"></span>
-          <span class="line"></span>
-        </div>
-
-
-        <a href="home.html" aria-label="Hjem" class="site-header__logo-link">
-          <img src="img/logo1.svg" alt="Trøjborg Bryg logo" class="site-header__logo" />
-        </a>
-
-        <div class="site-header__icons-container">
-          <!-- icons in header  -->
-          <div class="site-header__icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search">
-              <circle cx="11" cy="11" r="8"></circle>
-              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-            </svg>
-          </div>
-          <div class="site-header__icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-shopping-cart">
-              <circle cx="9" cy="21" r="1"></circle>
-              <circle cx="20" cy="21" r="1"></circle>
-              <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
-            </svg>
-          </div>
-        </div>
-      </div>
-
-      <div id="menu-overlay" aria-hidden="true">
-        <div class="menu-overlay__close-container">
-          <div id="menu-overlay-close" aria-label="close navigation" aria-expanded="true" aria-controls="menu" role="button">
+     <header>
+        <div class="site-header">
+          <div class="hamburger-btn" aria-label="Toggle Navigation" aria-expanded="false" aria-controls="menu" role="button">
+            <span class="line"></span>
             <span class="line"></span>
             <span class="line"></span>
           </div>
+
+
+          <a href="index.html" aria-label="Hjem" class="site-header__logo-link">
+            <img src="img/logo1.svg" alt="Trøjborg Bryg logo" class="site-header__logo" />
+          </a>
+
+          <div class="site-header__icons-container">
+            <!-- icons in header  -->
+            <div class="site-header__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+            </div>
+            <div class="site-header__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-shopping-cart">
+                <circle cx="9" cy="21" r="1"></circle>
+                <circle cx="20" cy="21" r="1"></circle>
+                <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+              </svg>
+            </div>
+          </div>
         </div>
-<!-- menu in header  -->
-        <nav id="menu">
-          <ul>
-            <li class="menu__item">
-              <div class="menu__link">
-                <a href="#">Sortiment</a>
 
-                <!-- Chevron icon for overlay-->
-                <span class="menu__link-icon menu__link-toggle-subnav">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                    <polyline points="6 9 12 15 18 9"></polyline>
-                  </svg>
-                </span>
-              </div>
-              <!-- menu sublist-->
-              <ul class="menu__sub-list">
-                <li class="menu__sub-item">
-                  <a href="home.html" class="menu__sub-link">Lager</a>
-                </li>
-                <li>
-                  <a href="home.html" class="menu__sub-link">Ale</a>
-                </li>
-                <li><a href="product.html" class="menu__sub-link">Alkoholfri</a></li>
-              </ul>
-            </li>
-          </ul>
+        <div id="menu-overlay" aria-hidden="true">
+          <div class="menu-overlay__close-container">
+            <div id="menu-overlay-close" aria-label="close navigation" aria-expanded="true" aria-controls="menu" role="button">
+              <span class="line"></span>
+              <span class="line"></span>
+            </div>
+          </div>
+ <!-- menu in header  -->
+          <nav id="menu">
+            <ul>
+              <li class="menu__item">
+                <div class="menu__link">
+                  <a href="#">Sortiment</a>
 
-          <ul>
-            <li class="menu__item">
-              <div class="menu__link">
-                <a href="home.html">Medlemskab</a>
+                  <!-- Chevron icon for overlay-->
+                  <span class="menu__link-icon menu__link-toggle-subnav">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                  </span>
+                </div>
+                <!-- menu sublist-->
+                <ul class="menu__sub-list">
+                  <li class="menu__sub-item">
+                    <a href="index.html" class="menu__sub-link">Lager</a>
+                  </li>
+                  <li>
+                    <a href="index.html" class="menu__sub-link">Ale</a>
+                  </li>
+                  <li><a href="product.html" class="menu__sub-link">Alkoholfri</a></li>
+                </ul>
+              </li>
+            </ul>
 
-                <!-- Chevron icon for overlay-->
-                <span class="menu__link-icon menu__link-toggle-subnav">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                    <polyline points="6 9 12 15 18 9"></polyline>
-                  </svg>
-                </span>
-              </div>
-              <!-- menu sublist-->
-              <ul class="menu__sub-list">
-                <li class="menu__sub-item">
-                  <a href="home.html" class="menu__sub-link">Profil</a>
-                </li>
-                <li>
-                  <a href="home.html" class="menu__sub-link">Abbonnement</a>
-                </li>
-              </ul>
-            </li>
-          </ul>
+            <ul>
+              <li class="menu__item">
+                <div class="menu__link">
+                  <a href="index.html">Medlemskab</a>
 
-          <ul>
-            <li class="menu__item">
-              <div class="menu__link">
-                <a href="#">Bryggeriet</a>
-                <!-- Chevron icon for overlay-->
-                <span class="menu__link-icon menu__link-toggle-subnav">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                    <polyline points="6 9 12 15 18 9"></polyline>
-                  </svg>
-                </span>
-              </div>
-              <!-- menu sublist-->
-              <ul class="menu__sub-list">
-                <li class="menu__sub-item">
-                  <a href="history.html" class="menu__sub-link">Historien</a>
-                </li>
-                <li>
-                  <a href="home.html" class="menu__sub-link">Events</a>
-                </li>
-                <li>
-                  <a href="home" class="menu__sub-link">Rundvisninger</a>
-                </li>
-              </ul>
-            </li>
-          </ul>
-            <li class="links">
-              <a href="home">Gavekort</a>
-            </li>
-            <li class="links">
-              <a href="home">Kontakt os</a>
-            </li>
-        </nav>
-      </div>
-    </header>
+                  <!-- Chevron icon for overlay-->
+                  <span class="menu__link-icon menu__link-toggle-subnav">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                  </span>
+                </div>
+                <!-- menu sublist-->
+                <ul class="menu__sub-list">
+                  <li class="menu__sub-item">
+                    <a href="index.html" class="menu__sub-link">Profil</a>
+                  </li>
+                  <li>
+                    <a href="index.html" class="menu__sub-link">Abbonnement</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+
+            <ul>
+              <li class="menu__item">
+                <div class="menu__link">
+                  <a href="#">Bryggeriet</a>
+                  <!-- Chevron icon for overlay-->
+                  <span class="menu__link-icon menu__link-toggle-subnav">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                  </span>
+                </div>
+                <!-- menu sublist-->
+                <ul class="menu__sub-list">
+                  <li class="menu__sub-item">
+                    <a href="history.html" class="menu__sub-link">Historien</a>
+                  </li>
+                  <li>
+                    <a href="index.html" class="menu__sub-link">Events</a>
+                  </li>
+                  <li>
+                    <a href="index.html" class="menu__sub-link">Rundvisninger</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+              <li class="links">
+                <a href="index.html">Gavekort</a>
+              </li>
+              <li class="links">
+                <a href="index.html">Kontakt os</a>
+              </li>
+          </nav>
+        </div>
+      </header>
 
       <main class="brewery">
         <section class="brewery__info">
